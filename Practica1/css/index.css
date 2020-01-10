@@ -18,3 +18,92 @@ fieldset {
     padding: 20px;
     border: 2px dashed #dddddd;
 }
+
+fieldset span {
+    color: #6278B0;
+    padding: 20px 40px;
+    display: block;
+    background-color: #CCE9F8;
+    background: url("https://previews.123rf.com/images/peangdao/peangdao1612/peangdao161200440/69718903-blazing-fire-flame-background.jpg") no-repeat center left
+}
+
+.formElement {
+    padding: 5px 10px;
+    width: 300px;
+}
+
+select[name=rate] {
+    font-size: 14px;
+    width: 250px;
+}
+
+#submitButton, #resetButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+}
+
+#submitButton {
+    background-color: #56C56F;
+}
+
+#resetButton {
+    background-color: #D9534F;
+}
+
+.clickable:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+table {
+    border: 1px solid #eee;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    color: #999;
+    border: 1px solid #eee;
+    padding: 15px 35px;
+}
+
+th {
+    color: white;
+    background-color: #55b3c5;
+    text-transform: uppercase;
+}
+
+tr {
+    background-color: #f4f4f4;
+}
+
+td:hover {
+    color: #555;
+}
+
+ul {
+    background-color: #ccc;
+    list-style: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    padding: 20px;
+}
+
+li > a {
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+li:hover, li > a:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #999;
+}

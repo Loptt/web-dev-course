@@ -1,0 +1,45 @@
+div {
+    border: 1px solid black;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px;
+    width: 100%;
+}
+
+@media (min-width: 521px) and (max-width: 900px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .leftSide {
+        width: 30%;
+    }
+
+    .rightTop, .rightBottom {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 901px) {
+    .leftSide, .rightSide {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .rightItem {
+        margin: auto;
+    }
+
+    .rightSide > div > div {
+        width: 400px;
+    }
+
+    .leftItem1, .leftItem2, .leftItem3 {
+        width: 150px;
+    }
+    .leftItem3 {
+        margin-left: auto;
+    }
+}

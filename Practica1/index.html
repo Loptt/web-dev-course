@@ -55,20 +55,21 @@
             <fieldset>
                 <legend>Leave us a comment</legend>
                 <div>
+                    <span>We will not share this information with anyone</span>
                     <label for="fname">First Name</label>
-                    <input type="text" name="fname">
+                    <input class="formElement" type="text" name="fname">
                 </div>
                 <div>
                     <label for="lname">Last Name</label>
-                    <input type="text" name="lname">
+                    <input class="formElement" type="text" name="lname">
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" name="email">
+                    <input class="formElement" type="email" name="email">
                 </div>
                 <div>
                     <label for="tele">Phone Number</label>
-                    <input type="tel" name="tele">
+                    <input class="formElement" type="tel" name="tele">
                 </div>
                 <div>
                     <label for="rate">Rate us:</label>
@@ -97,7 +98,8 @@
                         No: <input type="radio" name="visit" value="No">
                     </div>
                 </div>
-                <input type="submit">
+                <input type="submit" value="Submit" id="submitButton" class="clickable">
+                <input type="submit" value="Reset" id="resetButton" class="clickable">
             </fieldset>
         </form>
         <p>This is where any content in the footer would go.</p>
