@@ -1,107 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Restaurant Menu</title>
-        <link rel="stylesheet" href="css/index.css">
-    </head>
-    <body>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Reviews</a></li>
-        </ul>
-        <p>Thi is the sidebar!</p>
-        <h1>Welcome to our menu!</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Food</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Salad</td>
-                    <td>Fresh, delicious Cobb Salad</td>
-                    <td>$7.99</td>
-                </tr>
-                    <td>Burger</td>
-                    <td>1/4 lb grass-fed burger with choice of cheese</td>
-                    <td>$6.99</td>
-                <tr>
-                    <td>Chicken Salad Sandwich</td>
-                    <td>Our world famous chicken salad on a bagel with homemade pickles</td>
-                    <td>$8.99</td>
-                </tr>
-                <tr>
-                    <td>Buffalo Chicken Sandwich</td>
-                    <td>Spicy fired chicken on a brioche bun</td>
-                    <td>$10.99</td>
-                </tr>
-                <tr>
-                    <td>Fries</td>
-                    <td>Hand cut potatoes lightly fired and seasoned</td>
-                    <td>$1.99</td>
-                </tr>
-                <tr>
-                    <td>Soda</td>
-                    <td>Regular, diet, orange, or root beer</td>
-                    <td>$1.00</td>
-                </tr>
-            </tbody>
-        </table>
-        <form action="">
-            <fieldset>
-                <legend>Leave us a comment</legend>
+
+<head>
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <ul id="nav">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Reviews</a></li>
+    </ul>
+    <p>Thi is the sidebar!</p>
+    <h1>Welcome to our menu!</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Food</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Salad</td>
+                <td>Fresh, delicious Cobb Salad</td>
+                <td>$7.99</td>
+            </tr>
+            <td>Burger</td>
+            <td>1/4 lb grass-fed burger with choice of cheese</td>
+            <td>$6.99</td>
+            <tr>
+                <td>Chicken Salad Sandwich</td>
+                <td>Our world famous chicken salad on a bagel with homemade pickles</td>
+                <td>$8.99</td>
+            </tr>
+            <tr>
+                <td>Buffalo Chicken Sandwich</td>
+                <td>Spicy fired chicken on a brioche bun</td>
+                <td>$10.99</td>
+            </tr>
+            <tr>
+                <td>Fries</td>
+                <td>Hand cut potatoes lightly fired and seasoned</td>
+                <td>$1.99</td>
+            </tr>
+            <tr>
+                <td>Soda</td>
+                <td>Regular, diet, orange, or root beer</td>
+                <td>$1.00</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="" id="commentForm">
+        <fieldset id="fieldsetForm">
+            <legend>Leave us a comment</legend>
+            <div>
+                <span>We will not share this information with anyone</span>
+                <label for="fname">First Name</label>
+                <input class="formElement" type="text" name="fname">
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input class="formElement" type="text" name="lname">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input class="formElement" type="email" name="email">
+            </div>
+            <div>
+                <label for="tele">Phone Number</label>
+                <input class="formElement" type="tel" name="tele">
+            </div>
+            <div>
+                <label for="rate">Rate us:</label>
+                <select name="rate" id="rate">
+                    <option value="noselect">Select an option</option>
+                    <option value="verygood">Very Good!</option>
+                    <option value="bad">Bad!</option>
+                    <option value="verybad">Very Bad!</option>
+                </select>
+            </div>
+            <div>
                 <div>
-                    <span>We will not share this information with anyone</span>
-                    <label for="fname">First Name</label>
-                    <input class="formElement" type="text" name="fname">
+                    <label for="comment">Your Comment:</label>
                 </div>
                 <div>
-                    <label for="lname">Last Name</label>
-                    <input class="formElement" type="text" name="lname">
+                    <textarea name="comment" id="" cols="34" rows="4"></textarea>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="yesno">Would you visit us again?</label>
                 </div>
                 <div>
-                    <label for="email">Email</label>
-                    <input class="formElement" type="email" name="email">
+                    Yes: <input type="radio" name="visit" value="Yes">
                 </div>
                 <div>
-                    <label for="tele">Phone Number</label>
-                    <input class="formElement" type="tel" name="tele">
+                    No: <input type="radio" name="visit" value="No">
                 </div>
-                <div>
-                    <label for="rate">Rate us:</label>
-                    <select name="rate" id="rate">
-                        <option value="verygood">Very Good!</option>
-                        <option value="bad">Bad!</option>
-                        <option value="verybad">Very Bad!</option>
-                    </select>
-                </div>
-                <div>
-                    <div>
-                        <label for="comment">Your Comment:</label>
-                    </div>
-                    <div>
-                        <textarea name="comment" id="" cols="34" rows="4"></textarea>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <label for="yesno">Would you visit us again?</label>
-                    </div>
-                    <div>
-                        Yes: <input type="radio" name="visit" value="Yes">
-                    </div>
-                    <div>
-                        No: <input type="radio" name="visit" value="No">
-                    </div>
-                </div>
-                <input type="submit" value="Submit" id="submitButton" class="clickable">
-                <input type="submit" value="Reset" id="resetButton" class="clickable">
-            </fieldset>
-        </form>
-        <p>This is where any content in the footer would go.</p>
-    </body>
+            </div>
+            <input type="submit" value="Submit" id="submitButton" class="clickable">
+            <input type="submit" value="Reset" id="resetButton" class="clickable">
+        </fieldset>
+    </form>
+    <p>This is where any content in the footer would go.</p>
+    <script src="./js/index.js"></script>
+</body>
+
 </html>
