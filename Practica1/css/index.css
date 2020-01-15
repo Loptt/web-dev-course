@@ -107,3 +107,9 @@ li:hover, li > a:hover {
     color: white;
     background-color: #999;
 }
+
+div#error > p {
+    background-color: #ff9999;
+    margin: 5px;
+    padding: 10px;
+}
