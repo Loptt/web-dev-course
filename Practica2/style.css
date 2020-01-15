@@ -6,7 +6,7 @@ div {
     width: 100%;
 }
 
-@media (min-width: 521px) and (max-width: 900px) {
+    @media (min-width: 521px) and (max-width: 900px) {
     .mainContainer {
         display: flex;
         flex-direction: row;
