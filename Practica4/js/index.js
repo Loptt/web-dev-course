@@ -1,8 +1,9 @@
 $('#number-chooser').on('submit', function(event) {
     let number = $('#number-choice').val();
-    console.log(number);
 
-    for (let i = 0; i < number; i++) {
+    $('.js-results').html("");
+
+    for (let i = 0; i <= number; i++) {
         if (i % 15 === 0) {
             $('.js-results').append(`<div class="fizz-buzz-item fizzbuzz"><span>fizzbuzz</span></div>`);
         } else if (i % 5 === 0){
