@@ -15,6 +15,22 @@ function fetchDog() {
     })
 }
 
+function fetchDog2() {
+    let url = "https://dog.ceo/api/breeds/image/random";
+
+    $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        success: function(responseJSON) {
+            displayResults(responseJSON);
+        },
+        error: function(err) {
+            console.log(err);
+        }
+    });
+}
+
 function displayResults(responseJSON) {
     let results = document.getElementsByClassName('results');
     results[0].innerHTML = 
@@ -29,7 +45,7 @@ function watchForm() {
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
-        fetchDog();
+        fetchDog2();
     })
 }
 
