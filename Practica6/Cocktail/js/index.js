@@ -22,7 +22,7 @@ function displayResults(responseJSON) {
     drinks.forEach((drink) => {
         let ingredientsHTML = "";
 
-        for (var i = 1; i <= 15; i++) {
+        for (let i = 1; i <= 15; i++) {
             let ingTerm = `strIngredient${i}`;
             let ingQty = `strMeasure${i}`;
             if (drink[ingTerm] == null) {
